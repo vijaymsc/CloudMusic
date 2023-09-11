@@ -1,0 +1,13 @@
+com.example.cloud_music.app-jetified-window-1.0.0-beta04-0 /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/res
+com.example.cloud_music.app-core-1.6.0-1 /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/res
+com.example.cloud_music.app-jetified-window-java-1.0.0-beta04-2 /Users/ulektz/.gradle/caches/transforms-3/77bc6b014ca711856f9e141139c4d0d1/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.cloud_music.app-jetified-annotation-experimental-1.1.0-3 /Users/ulektz/.gradle/caches/transforms-3/b35d4eb18aebb594df12d6fc557895d7/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.cloud_music.app-debug-4 /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/res
+com.example.cloud_music.app-main-5 /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/res
+com.example.cloud_music.app-google-services-6 /Users/ulektz/StudioProjects/CloudMusic/build/app/generated/res/google-services/debug
+com.example.cloud_music.app-pngs-7 /Users/ulektz/StudioProjects/CloudMusic/build/app/generated/res/pngs/debug
+com.example.cloud_music.app-resValues-8 /Users/ulektz/StudioProjects/CloudMusic/build/app/generated/res/resValues/debug
+com.example.cloud_music.app-rs-9 /Users/ulektz/StudioProjects/CloudMusic/build/app/generated/res/rs/debug
+com.example.cloud_music.app-mergeDebugResources-10 /Users/ulektz/StudioProjects/CloudMusic/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.cloud_music.app-mergeDebugResources-11 /Users/ulektz/StudioProjects/CloudMusic/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.cloud_music.app-merged_res-12 /Users/ulektz/StudioProjects/CloudMusic/build/app/intermediates/merged_res/debug

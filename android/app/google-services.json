@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981798495432",
+    "project_id": "cloudmusic-be4b4",
+    "storage_bucket": "cloudmusic-be4b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981798495432:android:298cf4174df524af45b1fd",
+        "android_client_info": {
+          "package_name": "com.example.cloud_music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdNPxwy1ZgaqJYhwid9BWZiPIGy-IMg_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

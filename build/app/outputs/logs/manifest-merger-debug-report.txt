@@ -1,0 +1,115 @@
+-- Merging decision tree log ---
+application
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:3:4-33:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ulektz/.gradle/caches/transforms-3/a592f950793806b810e1ce5260d873a4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ulektz/.gradle/caches/transforms-3/a592f950793806b810e1ce5260d873a4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/77bc6b014ca711856f9e141139c4d0d1/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/ulektz/.gradle/caches/transforms-3/802c7184f4bc054bb0547964f0164824/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/d1863e66226d0456f537fa65af07572d/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/8ec25ef9e8cbbaa528cb153269427f99/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/35beacc5cf631621db63e36e8b98db43/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/74f6ec8b08d2d74f6e3cadae3d1b03d2/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ulektz/.gradle/caches/transforms-3/60dea60d807f6082015e5dbb94d10211/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/ebed8e9d475bcd6cd753da54dd4e04d3/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/9a01c09e44f586a829f8188364d47f00/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/b7c43d2b5892aa0cdcd2454810d4487d/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/72ef25492165bc49088c535b7e329097/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/36938e4658a67548f4f0fb00308a260b/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ulektz/.gradle/caches/transforms-3/a592f950793806b810e1ce5260d873a4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ulektz/.gradle/caches/transforms-3/2c7253d8858929532375bea749987dd9/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ulektz/.gradle/caches/transforms-3/b35d4eb18aebb594df12d6fc557895d7/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+	package
+		ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:2:5-38
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/77bc6b014ca711856f9e141139c4d0d1/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/77bc6b014ca711856f9e141139c4d0d1/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/ulektz/.gradle/caches/transforms-3/802c7184f4bc054bb0547964f0164824/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/ulektz/.gradle/caches/transforms-3/802c7184f4bc054bb0547964f0164824/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/d1863e66226d0456f537fa65af07572d/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/d1863e66226d0456f537fa65af07572d/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/8ec25ef9e8cbbaa528cb153269427f99/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/8ec25ef9e8cbbaa528cb153269427f99/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/35beacc5cf631621db63e36e8b98db43/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/35beacc5cf631621db63e36e8b98db43/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/74f6ec8b08d2d74f6e3cadae3d1b03d2/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/74f6ec8b08d2d74f6e3cadae3d1b03d2/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/ulektz/.gradle/caches/transforms-3/76d552d050ea074cf5b2940a174c364f/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ulektz/.gradle/caches/transforms-3/60dea60d807f6082015e5dbb94d10211/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ulektz/.gradle/caches/transforms-3/60dea60d807f6082015e5dbb94d10211/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/ebed8e9d475bcd6cd753da54dd4e04d3/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/ebed8e9d475bcd6cd753da54dd4e04d3/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/9a01c09e44f586a829f8188364d47f00/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/9a01c09e44f586a829f8188364d47f00/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/b7c43d2b5892aa0cdcd2454810d4487d/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/b7c43d2b5892aa0cdcd2454810d4487d/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/72ef25492165bc49088c535b7e329097/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ulektz/.gradle/caches/transforms-3/72ef25492165bc49088c535b7e329097/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/36938e4658a67548f4f0fb00308a260b/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ulektz/.gradle/caches/transforms-3/36938e4658a67548f4f0fb00308a260b/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ulektz/.gradle/caches/transforms-3/a592f950793806b810e1ce5260d873a4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ulektz/.gradle/caches/transforms-3/a592f950793806b810e1ce5260d873a4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ulektz/.gradle/caches/transforms-3/2c7253d8858929532375bea749987dd9/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ulektz/.gradle/caches/transforms-3/2c7253d8858929532375bea749987dd9/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ulektz/.gradle/caches/transforms-3/b35d4eb18aebb594df12d6fc557895d7/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ulektz/.gradle/caches/transforms-3/b35d4eb18aebb594df12d6fc557895d7/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from /Users/ulektz/StudioProjects/CloudMusic/android/app/src/debug/AndroidManifest.xml:7:22-64
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ulektz/.gradle/caches/transforms-3/159acc63941422337f4fb26dca4cdc02/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
