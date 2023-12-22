@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "981798495432",
+    "project_id": "cloudmusic-be4b4",
+    "storage_bucket": "cloudmusic-be4b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981798495432:android:cf79f14f3a29561745b1fd",
+        "android_client_info": {
+          "package_name": "com.vijay.cloud_music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981798495432-si4qhubrn8inb77j8q2sj2p0a0dolfla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdNPxwy1ZgaqJYhwid9BWZiPIGy-IMg_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981798495432-si4qhubrn8inb77j8q2sj2p0a0dolfla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
