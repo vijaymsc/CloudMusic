@@ -32,6 +32,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "cloud_firestore",
+      "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/cloud_firestore-4.13.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "cloud_firestore_platform_interface",
+      "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/cloud_firestore_platform_interface-6.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "cloud_firestore_web",
+      "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.8.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/collection-1.17.0",
       "packageUri": "lib/",
@@ -146,6 +164,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/path-1.8.2",
       "packageUri": "lib/",
@@ -156,6 +180,12 @@
       "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.6",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/ulektz/.pub-cache/hosted/pub.dev/provider-6.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
@@ -218,7 +248,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-12-22T05:30:41.223677Z",
+  "generated": "2023-12-22T10:55:48.680269Z",
   "generator": "pub",
   "generatorVersion": "2.19.2"
 }
