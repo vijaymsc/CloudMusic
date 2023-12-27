@@ -1,4 +1,7 @@
 import 'package:cloud_music/provider/firebase_provider.dart';
+import 'package:cloud_music/shared_prefrance/shared_preference_const.dart';
+import 'package:cloud_music/shared_prefrance/shared_prefrance_helper.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -11,22 +14,48 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-   MyApp({super.key});
-final GlobalKey<NavigatorState> navigationKey = GlobalKey<NavigatorState>();
+class MyApp extends StatefulWidget {
+  MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final GlobalKey<NavigatorState> navigationKey = GlobalKey<NavigatorState>();
+
   final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
+
+  bool userLoginStatus = false;
+
+  checkUserLogin() async {
+    print(userLoginStatus);
+    userLoginStatus =
+        await PreferenceHelper.getBool(PreferenceConstant.userLoginStatus);
+    print('userLoginStatus::${ await PreferenceHelper.getBool(PreferenceConstant.userLoginStatus)}');
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    //checkUserLogin();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
+    // final _auth = FirebaseAuth.instance.currentUser;
+
     return ChangeNotifierProvider(
       create: (context) => FirebaseProvide(),
       child: MaterialApp(
         navigatorKey: navigationKey,
         navigatorObservers: [routeObserver],
         onGenerateRoute: RouterViews.generateRoute,
-        home: const LoginUser(),
+        home: userLoginStatus ? const HomeScreen() : const LoginUser(),
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light(
           useMaterial3: true,
@@ -35,9 +64,6 @@ final GlobalKey<NavigatorState> navigationKey = GlobalKey<NavigatorState>();
     );
   }
 }
-
-
-
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

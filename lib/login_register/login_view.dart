@@ -83,11 +83,20 @@ class _LoginUserState extends State<LoginUser> {
                             // setState(() {
                             // });
                             User? user = await value.loginUser(_emailController.text, _passwordController.text);
-
                             if(user !=null){
                               _emailController.clear();
                               _passwordController.clear();
-                            }  // setState(() {
+
+                              if(!mounted)return;
+                              Navigator.pushReplacementNamed(context, RoutePaths.homeScreen);
+                              showSnackBarNew(context,"Login Successfully");
+                            } else{
+                              if(!mounted)return;
+                              showSnackBarNew(context,"Login failed ${value.loginErrorMsg}");
+                            }
+
+
+                            // setState(() {
                             // });
                           }
                         },

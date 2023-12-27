@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../login_register/login_view.dart';
 import '../login_register/register_view.dart';
+import '../main.dart';
 
 abstract class RouterViews {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -14,6 +15,9 @@ abstract class RouterViews {
 
         case RoutePaths.register:
           return MaterialPageRoute(builder: (_) => const RegisterView());
+
+        case RoutePaths.homeScreen:
+          return MaterialPageRoute(builder: (_)=>const HomeScreen());
 
         default:
           return MaterialPageRoute(
