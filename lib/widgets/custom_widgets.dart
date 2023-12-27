@@ -5,37 +5,41 @@ import '../provider/firebase_provider.dart';
 
 ///custom TextFormField
 class CustomTextFormField extends StatefulWidget {
-   const CustomTextFormField({
+  const CustomTextFormField({
     super.key,
-required this.formFieldController,
-     required this.hintTextValue,
-     this.inputType =TextInputType.text,
-     required this.validatorFunc,
-
+    required this.formFieldController,
+    required this.hintTextValue,
+    this.inputType = TextInputType.text,
+    required this.validatorFunc,
+    this.suffixIcon = false,
   });
-final TextEditingController formFieldController;
-final String hintTextValue;
-final TextInputType inputType;
-final String? Function(dynamic value) validatorFunc;
+  final TextEditingController formFieldController;
+  final String hintTextValue;
+  final TextInputType inputType;
+  final String? Function(dynamic value) validatorFunc;
+  final bool suffixIcon;
 
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
 }
 
 class _CustomTextFormFieldState extends State<CustomTextFormField> {
+  bool obscureText = true;
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
           height: 60,
-          decoration:  BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(
               Radius.circular(80),
             ),
             boxShadow: [
               BoxShadow(
-                  color: Colors.grey.shade400, blurRadius: 6, spreadRadius: 0.5),
+                  color: Colors.grey.shade400,
+                  blurRadius: 6,
+                  spreadRadius: 0.5),
             ],
           ),
         ),
@@ -43,20 +47,32 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           height: 80,
           child: TextFormField(
             controller: widget.formFieldController,
-            keyboardType:widget.inputType,
-            decoration:  InputDecoration(
+            keyboardType: widget.inputType,
+            obscureText:widget.suffixIcon?obscureText:false,
+            decoration: InputDecoration(
+              suffix: widget.suffixIcon
+                  ? InkWell(
+                      onTap: () {
+                        setState(() {
+                          obscureText = !obscureText;
+                        });
+                      },
+                      child: obscureText
+                          ? const Icon(Icons.visibility_off)
+                          : const Icon(Icons.visibility))
+                  : null,
               filled: true,
-              contentPadding: const EdgeInsets.only(left: 20,top: 20,bottom: 20),
+              contentPadding: const EdgeInsets.only(
+                  left: 20, top: 20, bottom: 20, right: 20),
               fillColor: Colors.white,
-              hintText:widget.hintTextValue,
+              hintText: widget.hintTextValue,
               border: const OutlineInputBorder(
                   borderRadius: BorderRadius.all(
                     Radius.circular(80),
                   ),
-                  borderSide: BorderSide.none
-              ),
+                  borderSide: BorderSide.none),
             ),
-             validator:widget.validatorFunc,
+            validator: widget.validatorFunc,
           ),
         ),
       ],
@@ -64,14 +80,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   }
 }
 
-
 ///custom Button
 class CustomButton extends StatefulWidget {
   const CustomButton({
     super.key,
     this.buttonHeight = 50,
     this.buttonWidth = double.infinity,
-    this.borderRadius =10,
+    this.borderRadius = 10,
     this.btnColor = 0xFF11114e,
     required this.btnText,
     this.textColor = Colors.white,
@@ -80,7 +95,7 @@ class CustomButton extends StatefulWidget {
     required this.btnClick,
   });
 
-  final double buttonHeight,buttonWidth,borderRadius,fontSize;
+  final double buttonHeight, buttonWidth, borderRadius, fontSize;
   final int btnColor;
   final String btnText;
   final Color textColor;
@@ -90,23 +105,24 @@ class CustomButton extends StatefulWidget {
   @override
   State<CustomButton> createState() => _CustomButtonState();
 }
+
 class _CustomButtonState extends State<CustomButton> {
   @override
   void didUpdateWidget(covariant CustomButton oldWidget) {
     // TODO: implement didUpdateWidget
     super.didUpdateWidget(oldWidget);
     print('didUpdateWidget');
-    if(widget.isLoading != oldWidget.isLoading){
-print('didUpdateWidget:::${widget.isLoading}');
+    if (widget.isLoading != oldWidget.isLoading) {
+      print('didUpdateWidget:::${widget.isLoading}');
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap:(){
-          print(widget.isLoading);
-          widget.btnClick();
-
+      onTap: () {
+        print(widget.isLoading);
+        widget.btnClick();
       },
       child: Container(
         // padding: const EdgeInsets.symmetric(vertical: 15,horizontal: 40),
@@ -114,11 +130,11 @@ print('didUpdateWidget:::${widget.isLoading}');
         width: widget.buttonWidth,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            color:  Color(widget.btnColor),
+            color: Color(widget.btnColor),
             borderRadius: BorderRadius.circular(widget.borderRadius)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:  [
+          children: [
             Text(
               widget.btnText,
               style: TextStyle(
@@ -126,15 +142,16 @@ print('didUpdateWidget:::${widget.isLoading}');
                   fontSize: widget.fontSize,
                   fontWeight: FontWeight.bold),
             ),
-            const SizedBox(width: 20,),
-            if(Provider.of<FirebaseProvide>(context,listen: true).btnLoading)
+            const SizedBox(
+              width: 20,
+            ),
+            if (Provider.of<FirebaseProvide>(context, listen: true).btnLoading)
               SizedBox(
                   width: 30,
                   height: 30,
                   child: CircularProgressIndicator(
                     color: widget.textColor,
-                  )
-              )
+                  ))
           ],
         ),
       ),
