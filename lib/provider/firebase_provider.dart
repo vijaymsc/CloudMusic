@@ -3,8 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import '../shared_prefrance/shared_preference_const.dart';
-import '../shared_prefrance/shared_prefrance_helper.dart';
+import '../UI/shared_prefrance/shared_preference_const.dart';
+import '../UI/shared_prefrance/shared_prefrance_helper.dart';
+
 
 class FirebaseProvide extends ChangeNotifier{
 
@@ -43,7 +44,6 @@ class FirebaseProvide extends ChangeNotifier{
           password: password);
      btnLoading = false;
     PreferenceHelper.setBool(PreferenceConstant.userLoginStatus, true);
-
       return credential.user;
     }on FirebaseAuthException catch(e){
       loginErrorMsg = e.message!;

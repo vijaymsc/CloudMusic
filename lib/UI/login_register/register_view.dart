@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../Route_page/route_constant.dart';
-import '../provider/firebase_provider.dart';
-import '../widgets/custom_widgets.dart';
+import '../../Route_page/route_constant.dart';
+import '../../provider/firebase_provider.dart';
+import '../../widgets/custom_widgets.dart';
 
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});

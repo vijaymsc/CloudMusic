@@ -2,8 +2,8 @@ import 'package:cloud_music/Route_page/route_constant.dart';
 import 'package:cloud_music/provider/firebase_provider.dart';
 import 'package:flutter/material.dart';
 
-import '../login_register/login_view.dart';
-import '../login_register/register_view.dart';
+import '../UI/login_register/login_view.dart';
+import '../UI/login_register/register_view.dart';
 import '../main.dart';
 
 abstract class RouterViews {

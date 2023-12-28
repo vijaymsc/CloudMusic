@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		7KU/KkwYua+NgngIsFeEhik886U=
+		4azCo+Gp3T2hS0iHt4G0zSb43L8=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		sbMD0OhcdrkmFtlwx/Eh1Ib2EFc=
+		vXpEYA/EqtzPBTSQe3WnKvPq9CA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		snN5uWlshJoG9tyLi99LWhwjD5I=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -66,7 +66,15 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		kV8Mz9TqboELbTOTQ/G2VGqpjz4=
+		z5azEJ2cCJdBcF++v2tDxgJ+n0U=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/music.png</key>
+		<data>
+		xHSLlXeowORaOUM0ZgIHtrSC5h0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/splashScreen.json</key>
+		<data>
+		k/7NsYoLsWTRBX2E2QrzIhd/0KA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -78,7 +86,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		tugm+slk4nLxW0DHo2LFkT2GsuY=
+		IdOUDePYC3qXFtf+aFpuBRcfYCA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -400,6 +408,18 @@
 		<data>
 		GU0gwxf3Aqz/6A3iiLCkuZQ6psE=
 		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<data>
+		39GSzfEINnvaL9whpR6iUTN5d9o=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		iuclYMZ9OARHB+b9O9b9I5WqJSo=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<data>
+		jwZF7rlTX44jyNIrX7UbZkm4LkM=
+		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
 		KQvVDvBEMdfcHDNElKMgJf1Kqu8=
@@ -489,7 +509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HXdTPa79UfM5DkwoQ6yWw/6hLkIvuuwEMOx3WDvbO44=
+			to7CVbxW1o9Z82Ahz9/89D9P13EqfgipFdOkR04PGqo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -503,14 +523,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wdLQ0at4niAaFaqndY5pQAvrvKZOBPez8xD6BSll+lU=
+			+bNon+cDUSMqoPoHSghDgibf95VvwTycG9Nx5hDKIm4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			0AtPVB/MyKVfxiwwbpZOkVRni7y3w8mFjx6Y4LLKmfE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -524,7 +544,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UFVzvHSFh1/PKn3DChPO/HGIhGqn5ci4/bXcg2NIaIo=
+			YY+uituGSMQd1ItEo41GrZIm3uSQRWcjRM3TzVhBZEI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/music.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+zqsl2bxZAAF0JPd9IVJLYDXBrsyYIUzkLIrqg14Mt8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/splashScreen.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IS5T+o3/tysihfucpKTxnwpWa4YSY2JsHmBsb1ztcf4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -545,7 +579,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PLtwPN1JLvMIr/UEOeV6b/kegUZiSN+u11mTJ4w5LMM=
+			+zX23RNCQhMtlVK8m/fizkUE8xY1Tdc7eYQGIo+KcVQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -1106,6 +1140,27 @@
 			<key>hash2</key>
 			<data>
 			8BYjn0cLcbB43eBpL+Csq7R8KROpeI6sNRMiRlSA2+k=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BUSySRlxBjm5jjqE+RRNt9ftVv38AvUE1wzgrZI4fkQ=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MAgkSZzzKQiameBH5iE+YtGg/uxRSXcv4d3dvkPk8Gc=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P5H/miHLNP3wM4KXUAshzYhcVlLCsJDd4Z3tF7C9urY=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>

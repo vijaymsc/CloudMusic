@@ -3,9 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../provider/firebase_provider.dart';
-import '../widgets/custom_widgets.dart';
-
+import '../../provider/firebase_provider.dart';
+import '../../widgets/custom_widgets.dart';
 class LoginUser extends StatefulWidget {
   const LoginUser({super.key});
 
@@ -86,7 +85,6 @@ class _LoginUserState extends State<LoginUser> {
                             if(user !=null){
                               _emailController.clear();
                               _passwordController.clear();
-
                               if(!mounted)return;
                               Navigator.pushReplacementNamed(context, RoutePaths.homeScreen);
                               showSnackBarNew(context,"Login Successfully");
