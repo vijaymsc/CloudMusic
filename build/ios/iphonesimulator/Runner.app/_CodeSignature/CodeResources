@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		4azCo+Gp3T2hS0iHt4G0zSb43L8=
+		vdRzr3kz1F3kqyn+htDQQa2AJoM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		vXpEYA/EqtzPBTSQe3WnKvPq9CA=
+		1+hYnuDv6XlRoXqz1hvsVEfAcK8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		snN5uWlshJoG9tyLi99LWhwjD5I=
+		3ZoGe8DK8VnXiBQWnvtO8RWEmNk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -67,10 +67,6 @@
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
 		z5azEJ2cCJdBcF++v2tDxgJ+n0U=
-		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/music.png</key>
-		<data>
-		xHSLlXeowORaOUM0ZgIHtrSC5h0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/splashScreen.json</key>
 		<data>
@@ -86,7 +82,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		IdOUDePYC3qXFtf+aFpuBRcfYCA=
+		PlX1K0NuhhZsG4+2ceYG9A8YIXo=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -509,7 +505,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			to7CVbxW1o9Z82Ahz9/89D9P13EqfgipFdOkR04PGqo=
+			yqN0tS38s8Zi5qGLzpSjfFFdLbqyybbvuKdCZ9AS6Bw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -523,14 +519,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+bNon+cDUSMqoPoHSghDgibf95VvwTycG9Nx5hDKIm4=
+			wkqapsu1ZV5vRHR62Qk26C/6OlLzln7DMr4I789VRck=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0AtPVB/MyKVfxiwwbpZOkVRni7y3w8mFjx6Y4LLKmfE=
+			UF0YTj1YdNus4hr55rlBSru8dqFP/YTSKOkZ6fSFUKE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -545,13 +541,6 @@
 			<key>hash2</key>
 			<data>
 			YY+uituGSMQd1ItEo41GrZIm3uSQRWcjRM3TzVhBZEI=
-			</data>
-		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/music.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+zqsl2bxZAAF0JPd9IVJLYDXBrsyYIUzkLIrqg14Mt8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/splashScreen.json</key>
@@ -579,7 +568,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+zX23RNCQhMtlVK8m/fizkUE8xY1Tdc7eYQGIo+KcVQ=
+			srb7YCDGaEeqsS2Wi8tkIYKIeTkBD7iqIqTpBUvzs/Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

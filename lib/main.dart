@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:convert';
+import 'dart:math';
 import 'package:cloud_music/provider/firebase_provider.dart';
 import 'package:cloud_music/widgets/custom_widgets.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -102,6 +104,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  Random random = Random();
   @override
   Widget build(BuildContext context) {
     return Consumer<FirebaseProvide>(builder: (context, value, child) {
@@ -142,11 +145,24 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
-            // await  Provider.of<FirebaseProvide>(context,listen: false).createGroup("music_freek","vijay");
+            //var groupId = randomGroupId();
+            // await  Provider.of<FirebaseProvide>(context,listen: false).createGroup(
+            //     adminName: 'vijay',groupName:"flutter mobile" ,userId:"DTsuEuRnlBaZrTwQ7zHfC6QdUrp1",groupId: groupId );
+            //await  Provider.of<FirebaseProvide>(context,listen: false).addMemberInGroup( grpDocumentId: 'B7dU3C1aOf3sppzqncDY',userId:"siva" );
+            //  await  Provider.of<FirebaseProvide>(context,listen: false).getMemberLis(grpDocumentId: "B7dU3C1aOf3sppzqncDY",fieldId: "members");
+            //   value.getAllGroupList();
           },
           child: const Icon(Icons.add),
         ),
       );
     });
+  }
+
+  randomGroupId() {
+    List<int> value = List.generate(5, (index) => random.nextInt(255));
+    List<String> a = base64Encode(value).split('');
+    a.shuffle();
+    var data = a.join('');
+    return data;
   }
 }
