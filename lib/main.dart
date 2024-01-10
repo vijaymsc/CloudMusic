@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
+import 'package:cloud_music/core/baseWidget.dart';
 import 'package:cloud_music/provider/firebase_provider.dart';
 import 'package:cloud_music/widgets/custom_widgets.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -105,57 +106,73 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   Random random = Random();
+  FirebaseProvide? _firebaseProvide;
   @override
   Widget build(BuildContext context) {
-    return Consumer<FirebaseProvide>(builder: (context, value, child) {
-      return Scaffold(
-        // backgroundColor: const Color(0xFFecfefa),
-        drawer: Drawer(
-          child: SafeArea(
-            top: false,
-            bottom: true,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  CustomButton(
-                    btnText: 'LogOut',
-                    btnClick: () async {
-                      bool status = await value.logOut();
-                      if (status && mounted) {
-                        showSnackBarNew(context, "LogOut Successfully");
-                        Navigator.pushReplacementNamed(
-                            context, RoutePaths.loginUser);
-                      } else {
-                        showSnackBarNew(context, "LogOut Failed");
-                      }
-                    },
-                  )
-                ],
+    return BaseWidget<FirebaseProvide>(
+        model: FirebaseProvide(),
+        onModelReady: (model) {
+          model.getAllGroupList();
+        },
+        builder: (context, model, child) {
+          _firebaseProvide = model;
+          return Scaffold(
+            appBar: AppBar(
+              title: const Text("welcome"),
+            ),
+            drawer: Drawer(
+              child: SafeArea(
+                top: false,
+                bottom: true,
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      CustomButton(
+                        btnText: 'LogOut',
+                        btnClick: () async {
+                          bool status = await model.logOut();
+                          if (status && mounted) {
+                            showSnackBarNew(context, "LogOut Successfully");
+                            Navigator.pushReplacementNamed(
+                                context, RoutePaths.loginUser);
+                          } else {
+                            showSnackBarNew(context, "LogOut Failed");
+                          }
+                        },
+                      )
+                    ],
+                  ),
+                ),
               ),
             ),
-          ),
-        ),
-        appBar: AppBar(
-          title: const Text("welcome"),
-        ),
-        body: Column(
-          children: const [],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () async {
-            //var groupId = randomGroupId();
-            // await  Provider.of<FirebaseProvide>(context,listen: false).createGroup(
-            //     adminName: 'vijay',groupName:"flutter mobile" ,userId:"DTsuEuRnlBaZrTwQ7zHfC6QdUrp1",groupId: groupId );
-            //await  Provider.of<FirebaseProvide>(context,listen: false).addMemberInGroup( grpDocumentId: 'B7dU3C1aOf3sppzqncDY',userId:"siva" );
-            //  await  Provider.of<FirebaseProvide>(context,listen: false).getMemberLis(grpDocumentId: "B7dU3C1aOf3sppzqncDY",fieldId: "members");
-            //   value.getAllGroupList();
-          },
-          child: const Icon(Icons.add),
-        ),
-      );
-    });
+            body: Column(
+              children: [
+                ListView.builder(
+                    itemCount: model.getGroupData.length,
+                    shrinkWrap: true,
+                    scrollDirection: Axis.vertical,
+                    itemBuilder: (context, index) {
+                      return Text("${model.getGroupData[index].groupName}");
+                    })
+              ],
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () async {
+                var groupId = randomGroupId();
+                // await  Provider.of<FirebaseProvide>(context,listen: false).createGroup(
+                //     adminName: 'vijay',groupName:"music freek" ,userId:"lingesh",groupId: groupId );
+                //  await  Provider.of<FirebaseProvide>(context,listen: false).addMemberInGroup( grpDocumentId: 'B7dU3C1aOf3sppzqncDY',userId:"siva" );
+                //  await  Provider.of<FirebaseProvide>(context,listen: false).getMemberLis(grpDocumentId: "B7dU3C1aOf3sppzqncDY",fieldId: "members");
+                model.getAllGroupList();
+                //  value.getCollectionDocIds();
+              },
+              child: const Icon(Icons.add),
+            ),
+          );
+        });
   }
 
   randomGroupId() {

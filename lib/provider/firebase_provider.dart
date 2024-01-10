@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -22,6 +24,10 @@ class FirebaseProvide extends ChangeNotifier {
   String loginErrorMsg = '';
 
   List<dynamic> user = [];
+  
+  
+  ///getAllGroupName
+  List<GetGroupData> getGroupData = [];
 
   ///create user
   Future<User?> createUser(String userEmail, password) async {
@@ -88,7 +94,7 @@ class FirebaseProvide extends ChangeNotifier {
   Future createGroup(
       {required String groupName, userId, adminName, groupId}) async {
     user.add(userId);
-    DocumentReference groupDocRef = await groupCollection.add({
+    await groupCollection.doc(groupName).set({
       'groupName': groupName,
       'groupIcon': '',
       'admin': adminName,
@@ -123,15 +129,28 @@ class FirebaseProvide extends ChangeNotifier {
     }
   }
 
+
   getAllGroupList() async {
     try {
       final snapshot = await groupCollection.get();
-      List<QueryDocumentSnapshot> value = snapshot.docs;
-      //  final data = snapshot.data() as Map<String, dynamic>;
-      //  print('snapshot::lllll${value.}');
-      //  print('data::$data');
+      final List list = snapshot.docs.map((doc) => doc.data()).toList();
+      print(list);
+      for (var item in list) {
+        getGroupData.add(GetGroupData.fromJson(item));
+      }
       notifyListeners();
     } catch (e) {
+      showLog(e.toString());
+    }
+  }
+
+  Future getCollectionDocIds() async {
+    try {
+      QuerySnapshot result = await groupCollection.get();
+      for (var element in result.docs) {
+        showLog(element.id);
+      }
+    } catch (e, stackTrace) {
       showLog(e.toString());
     }
   }
@@ -152,4 +171,47 @@ showSnackBar(String contentTitle) {
   return SnackBar(
     content: Text(contentTitle),
   );
+}
+
+
+
+
+GetGroupData getGroupDataFromJson(String str) => GetGroupData.fromJson(json.decode(str));
+
+String getGroupDataToJson(GetGroupData data) => json.encode(data.toJson());
+
+class GetGroupData {
+  String? groupId;
+  String? groupName;
+  String? admin;
+  String? groupIcon;
+  List<String>? members;
+  List<String>? music;
+
+  GetGroupData({
+    this.groupId,
+    this.groupName,
+    this.admin,
+    this.groupIcon,
+    this.members,
+    this.music,
+  });
+
+  factory GetGroupData.fromJson(Map<String, dynamic> json) => GetGroupData(
+    groupId: json["groupId"],
+    groupName: json["groupName"],
+    admin: json["admin"],
+    groupIcon: json["groupIcon"],
+    members: json["members"] == null ? [] : List<String>.from(json["members"]!.map((x) => x)),
+    music: json["music"] == null ? [] : List<String>.from(json["music"]!.map((x) => x)),
+  );
+
+  Map<String, dynamic> toJson() => {
+    "groupId": groupId,
+    "groupName": groupName,
+    "admin": admin,
+    "groupIcon": groupIcon,
+    "members": members == null ? [] : List<dynamic>.from(members!.map((x) => x)),
+    "music": music == null ? [] : List<dynamic>.from(music!.map((x) => x)),
+  };
 }
